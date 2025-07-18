@@ -1,0 +1,25 @@
+server:
+  port: 3000
+DEBUG: true
+spring:
+  data:
+    mongodb:
+      uri: 'mongodb://operator:operator@10.10.1.37:27017/operatorportal'
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  websocket:
+    max-text-message-size: 10485760
+    max-binary-message-size: 10485760
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
+
+# JWT 配置
+app:
+  jwtSecret: Q2hvbmdxaW5nQWlTdXBlclNlY3JldEtleUhlcmVGb3JIZXg1MTJTdXBlclNlY3JldEtleUhlcmVGb3JIZXg1MTI=
+  jwtExpirationInMs: 86400000

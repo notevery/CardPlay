@@ -1,0 +1,5 @@
+{
+  "/api/operators": "/operators",
+  "/api/operators/:id": "/operators/:id",
+  "/api/categories": "/categories"
+}
